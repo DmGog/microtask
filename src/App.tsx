@@ -4,6 +4,7 @@ import {Header} from "./components/Header";
 import {Body} from "./components/Body";
 import {Footer} from "./components/Footer";
 import {NewComponent} from "./components/NewComponent";
+import {Button} from "./components/Button";
 
 function App() {
 
@@ -21,11 +22,20 @@ function App() {
         {id: 11, name: "Christopher", age: 100},
     ]
 
+    const subscribe = (nameSubscribe: string, countSubscribe: number) => {
+        alert(`${nameSubscribe} вы подписались, всего подписчиков ${countSubscribe}`)
+    }
+    const share = (nameShare: string, countShare: number) => {
+        alert(`${nameShare} вы поделились, всего поделилось ${countShare}`)
+    }
+
     return (
         <>
             <Header title={"New Header"}/>
             <Body titleForBody={"New Body"}/>
             <NewComponent students={students}/>
+            <Button name={"подписаться"} callBack={() => subscribe("Иван", 20)}/>
+            <Button name={"поделиться"} callBack={() => share("Иван", 15)}/>
             <Footer titleForFooter={"New Footer"}/>
         </>
     );
