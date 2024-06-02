@@ -2,6 +2,10 @@
 .App {
     padding: 30px;
     display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+
 }
 
 .App > div {
@@ -39,4 +43,12 @@ table, td, th {
     align-items: center;
     margin-top: 50px;
     gap: 20px;
+}
+button{
+    width: 50px
+}
+
+#root{
+    display: flex;
+    justify-content: center;
 }

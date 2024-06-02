@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import {Filter} from "./Filter/Filter";
+import {Input} from "./input/Input";
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
     return (
         <>
             {/*<Header title={"New Header"}/>*/}
-            <Filter/>
+
             {/*<Body titleForBody={"New Body"}/>*/}
             {/*<NewComponent students={students}/>*/}
             {/*<Button name={"подписаться"} callBack={() => subscribe("Иван", 20)}/>*/}
@@ -46,6 +47,9 @@ function App() {
             {/*<button onClick={onClickHandler}>number</button>*/}
             {/*<button onClick={onClickHandleReset}>reset</button>*/}
             {/*<Footer titleForFooter={"New Footer"}/>*/}
+            {/*<Filter/>*/}
+            <Input/>
+
         </>
     );
 }
